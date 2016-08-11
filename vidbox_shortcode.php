@@ -1,9 +1,9 @@
 <?php
 /*
 Plugin Name: Chooch VidBox Shortcode
-Plugin URI:
+Plugin URI: https://github.com/StewM/vidbox-shortcode
 Description: A plugin to add a video lightbox shortcode and button to the editor
-Version: 1.0
+Version: 1.1
 Author: Stewart Mink
 Author URI: http://stewartmink.com
 */
@@ -66,7 +66,7 @@ class vidbox_shortcode{
   	   		}
   		}
 
-  		$output .='<div class="videoplayer"><a class="'.$atts['auto_play'].'" href="'.$atts['video_url'].'"><span></span><img src="http://img.youtube.com/vi/' . $video_id . '/hqdefault.jpg" alt="'. $atts['alt_text'] .'" /></a></div><div class="videoclear"></div>';
+  		$output .='<div class="videoplayer"><a class="'.$atts['auto_play'].'" href="'.$atts['video_url'].'"><span></span><img src="http://img.youtube.com/vi/' . $video_id . '/maxresdefault.jpg" alt="'. $atts['alt_text'] .'" /></a></div><div class="videoclear"></div>';
   		ob_clean();
   		return $output;
     }
